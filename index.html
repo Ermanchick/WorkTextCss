@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Свойства для Текста - Полное Руководство</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS Свойства для Текста</h1>
+            <p class="subtitle">Полное руководство с примерами</p>
+        </header>
+
+        <main class="content">
+            <!-- Секция 1: Основные свойства шрифта -->
+            <section class="section" id="font-properties">
+                <h2>1. Основные свойства шрифта</h2>
+                
+                <div class="example">
+                    <h3>font-family</h3>
+                    <p class="font-family-example">Этот текст демонстрирует разные семейства шрифтов</p>
+                </div>
+
+                <div class="example">
+                    <h3>font-size</h3>
+                    <p class="font-size-example">Текст разного размера: <span class="small">маленький</span> 
+                    <span class="medium">средний</span> <span class="large">большой</span></p>
+                </div>
+
+                <div class="example">
+                    <h3>font-weight</h3>
+                    <p class="font-weight-example">Разная толщина: <span class="light">легкий</span> 
+                    <span class="normal">нормальный</span> <span class="bold">жирный</span></p>
+                </div>
+
+                <div class="example">
+                    <h3>font-style</h3>
+                    <p class="font-style-example">Стили: <span class="normal">нормальный</span> 
+                    <span class="italic">курсив</span> <span class="oblique">наклонный</span></p>
+                </div>
+            </section>
+
+            <!-- Секция 2: Выравнивание и интервалы -->
+            <section class="section" id="alignment-spacing">
+                <h2>2. Выравнивание и интервалы</h2>
+                
+                <div class="example">
+                    <h3>text-align</h3>
+                    <div class="text-align-container">
+                        <p class="text-left">Текст выровненный по левому краю</p>
+                        <p class="text-center">Текст выровненный по центру</p>
+                        <p class="text-right">Текст выровненный по правому краю</p>
+                        <p class="text-justify">Текст с выравниванием по ширине. Этот текст занимает всю доступную ширину контейнера, создавая ровные края с обеих сторон.</p>
+                    </div>
+                </div>
+
+                <div class="example">
+                    <h3>line-height</h3>
+                    <div class="line-height-container">
+                        <p class="line-tight">Маленький межстрочный интервал. Текст расположен плотно друг к другу.</p>
+                        <p class="line-normal">Нормальный межстрочный интервал. Удобный для чтения.</p>
+                        <p class="line-wide">Большой межстрочный интервал. Текст с большим расстоянием между строками.</p>
+                    </div>
+                </div>
+
+                <div class="example">
+                    <h3>letter-spacing & word-spacing</h3>
+                    <p class="letter-spacing-example">Разный межбуквенный интервал: 
+                        <span class="spacing-tight">плотный</span> 
+                        <span class="spacing-normal">нормальный</span> 
+                        <span class="spacing-wide">широкий</span>
+                    </p>
+                    <p class="word-spacing-example">Разный межсловный интервал: 
+                        <span class="word-tight">плотное расположение</span> 
+                        <span class="word-normal">нормальное расположение</span> 
+                        <span class="word-wide">широкое расположение</span>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Секция 3: Трансформация и оформление -->
+            <section class="section" id="transformation-decoration">
+                <h2>3. Трансформация и оформление</h2>
+                
+                <div class="example">
+                    <h3>text-transform</h3>
+                    <p class="text-transform-example">Разные варианты трансформации: 
+                        <span class="lowercase">ВСЕ ПРОПИСНЫЕ В НИЖНИЙ РЕГИСТР</span> | 
+                        <span class="uppercase">все строчные в верхний регистр</span> | 
+                        <span class="capitalize">каждое слово с заглавной буквы</span>
+                    </p>
+                </div>
+
+                <div class="example">
+                    <h3>text-decoration</h3>
+                    <p class="text-decoration-example">Варианты оформления: 
+                        <span class="underline">подчеркнутый</span> | 
+                        <span class="overline">надчеркнутый</span> | 
+                        <span class="line-through">перечеркнутый</span> | 
+                        <span class="dotted-underline">точечное подчеркивание</span>
+                    </p>
+                </div>
+
+                <div class="example">
+                    <h3>text-indent</h3>
+                    <p class="text-indent-example">Этот абзац имеет красную строку. Текст начинается с отступа, что традиционно используется в книжной верстке для обозначения начала нового абзаца.</p>
+                    <p class="no-indent">А этот абзац без красной строки. Текст начинается сразу от левого края.</p>
+                </div>
+            </section>
+
+            <!-- Секция 4: Тени и эффекты -->
+            <section class="section" id="shadows-effects">
+                <h2>4. Тени и эффекты</h2>
+                
+                <div class="example">
+                    <h3>text-shadow</h3>
+                    <div class="text-shadow-container">
+                        <p class="shadow-simple">Простая тень</p>
+                        <p class="shadow-blur">Размытая тень</p>
+                        <p class="shadow-multiple">Множественные тени</p>
+                        <p class="shadow-neon">Неоновый эффект</p>
+                        <p class="shadow-emboss">Тисненый эффект</p>
+                    </div>
+                </div>
+
+                <div class="example">
+                    <h3>color & opacity</h3>
+                    <div class="color-examples">
+                        <p class="color-hex">Цвет в HEX формате</p>
+                        <p class="color-rgb">Цвет в RGB формате</p>
+                        <p class="color-rgba">Цвет в RGBA с прозрачностью</p>
+                        <p class="color-hsl">Цвет в HSL формате</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция 5: Прочие свойства -->
+            <section class="section" id="other-properties">
+                <h2>5. Прочие свойства</h2>
+                
+                <div class="example">
+                    <h3>white-space</h3>
+                    <div class="white-space-examples">
+                        <p class="normal-space">Нормальный перенос:    много    пробелов     игнорируются</p>
+                        <p class="nowrap-space">No-wrap: текст не переносится и выходит за границы контейнера если он слишком длинный</p>
+                        <p class="pre-space">Pre:    сохраняет    все     пробелы     и     переносы</p>
+                    </div>
+                </div>
+
+                <div class="example">
+                    <h3>text-overflow</h3>
+                    <div class="text-overflow-container">
+                        <p class="clip-overflow">Этот текст слишком длинный и будет обрезан когда выйдет за границы контейнера</p>
+                        <p class="ellipsis-overflow">Этот текст слишком длинный и будет обрезан с многоточием в конце</p>
+                    </div>
+                </div>
+
+                <div class="example">
+                    <h3>direction & writing-mode</h3>
+                    <div class="direction-examples">
+                        <p class="ltr-direction">Текст слева направо (LTR)</p>
+                        <p class="rtl-direction">النص من اليمين إلى اليسار (RTL)</p>
+                        <p class="vertical-text">Вертикальный текст</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Создано для демонстрации CSS свойств текста</p>
+        </footer>
+    </div>
+</body>
+</html>

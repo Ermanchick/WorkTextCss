@@ -1,0 +1,441 @@
+/* ===== ОСНОВНЫЕ СТИЛИ И СБРОС ===== */
+/* Сброс отступов и использование border-box для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Учитываем padding и border в ширине элемента */
+}
+
+/* Основные стили страницы */
+body {
+  font-family: 'Open Sans', sans-serif; /* Основной шрифт */
+  line-height: 1.6; /* Межстрочный интервал */
+  color: #333; /* Основной цвет текста */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Градиентный фон */
+  min-height: 100vh; /* Минимальная высота на весь экран */
+}
+
+/* Основной контейнер */
+.container {
+  max-width: 1200px; /* Максимальная ширина */
+  margin: 0 auto; /* Центрирование по горизонтали */
+  padding: 20px; /* Внутренние отступы */
+}
+
+/* ===== ШАПКА САЙТА ===== */
+.header {
+  text-align: center; /* Выравнивание по центру */
+  margin-bottom: 40px; /* Отступ снизу */
+  padding: 40px 20px; /* Внутренние отступы */
+  background: rgba(255, 255, 255, 0.95); /* Полупрозрачный белый фон */
+  border-radius: 15px; /* Скругление углов */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+}
+
+/* Заголовок сайта */
+.header h1 {
+  font-family: 'Roboto', sans-serif; /* Шрифт заголовка */
+  font-size: 3rem; /* Размер шрифта */
+  font-weight: 700; /* Жирность шрифта */
+  color: #2c3e50; /* Цвет текста */
+  margin-bottom: 10px; /* Отступ снизу */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Тень текста */
+}
+
+/* Подзаголовок */
+.subtitle {
+  font-size: 1.2rem; /* Размер шрифта */
+  color: #7f8c8d; /* Цвет текста */
+  font-weight: 300; /* Легкий шрифт */
+}
+
+/* ===== СЕКЦИИ С ПРИМЕРАМИ ===== */
+.section {
+  background: rgba(255, 255, 255, 0.95); /* Полупрозрачный белый фон */
+  margin-bottom: 30px; /* Отступ между секциями */
+  padding: 30px; /* Внутренние отступы */
+  border-radius: 15px; /* Скругление углов */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Заголовки секций */
+.section h2 {
+  font-family: 'Roboto', sans-serif; /* Шрифт заголовка */
+  color: #2c3e50; /* Цвет текста */
+  margin-bottom: 25px; /* Отступ снизу */
+  padding-bottom: 10px; /* Отступ снизу для линии */
+  border-bottom: 2px solid #3498db; /* Синяя линия под заголовком */
+  font-size: 2rem; /* Размер шрифта */
+}
+
+/* Контейнеры с примерами */
+.example {
+  margin-bottom: 30px; /* Отступ между примерами */
+  padding: 20px; /* Внутренние отступы */
+  background: #f8f9fa; /* Светло-серый фон */
+  border-radius: 10px; /* Скругление углов */
+  border-left: 4px solid #3498db; /* Синяя полоса слева */
+}
+
+/* Заголовки примеров */
+.example h3 {
+  color: #2c3e50; /* Цвет текста */
+  margin-bottom: 15px; /* Отступ снизу */
+  font-family: 'Roboto', sans-serif; /* Шрифт заголовка */
+  font-size: 1.3rem; /* Размер шрифта */
+}
+
+/* ===== 1. ОСНОВНЫЕ СВОЙСТВА ШРИФТА ===== */
+
+/* font-family - семейство шрифтов */
+.font-family-example {
+  font-family: 'Georgia', 'Times New Roman', serif; /* Запасные шрифты через запятую */
+  font-size: 1.2rem; /* Размер шрифта */
+  padding: 15px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+}
+
+/* font-size - размер шрифта */
+.font-size-example {
+  font-size: 1.1rem; /* Базовый размер шрифта */
+}
+.small { 
+  font-size: 0.8rem; /* Маленький текст (80% от базового) */
+}
+.medium { 
+  font-size: 1.2rem; /* Средний текст (120% от базового) */
+}
+.large { 
+  font-size: 1.8rem; /* Большой текст (180% от базового) */
+}
+
+/* font-weight - толщина шрифта */
+.font-weight-example {
+  font-size: 1.1rem; /* Размер шрифта */
+}
+.light { 
+  font-weight: 300; /* Легкий шрифт */
+}
+.normal { 
+  font-weight: 400; /* Нормальный шрифт */
+}
+.bold { 
+  font-weight: 700; /* Жирный шрифт */
+}
+
+/* font-style - стиль шрифта */
+.font-style-example {
+  font-size: 1.1rem; /* Размер шрифта */
+}
+.italic { 
+  font-style: italic; /* Курсивное начертание */
+}
+.oblique { 
+  font-style: oblique; /* Наклонное начертание */
+}
+
+/* ===== 2. ВЫРАВНИВАНИЕ И ИНТЕРВАЛЫ ===== */
+
+/* text-align - выравнивание текста */
+.text-align-container p {
+  margin-bottom: 15px; /* Отступ между абзацами */
+  padding: 10px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+}
+.text-left { 
+  text-align: left; /* Выравнивание по левому краю */
+}
+.text-center { 
+  text-align: center; /* Выравнивание по центру */
+}
+.text-right { 
+  text-align: right; /* Выравнивание по правому краю */
+}
+.text-justify { 
+  text-align: justify; /* Выравнивание по ширине */
+  text-justify: inter-word; /* Метод выравнивания для межсловных пробелов */
+}
+
+/* line-height - межстрочный интервал */
+.line-height-container p {
+  margin-bottom: 15px; /* Отступ между абзацами */
+  padding: 10px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+}
+.line-tight { 
+  line-height: 1.2; /* Плотный межстрочный интервал */
+}
+.line-normal { 
+  line-height: 1.6; /* Нормальный межстрочный интервал */
+}
+.line-wide { 
+  line-height: 2.2; /* Широкий межстрочный интервал */
+}
+
+/* letter-spacing & word-spacing - межбуквенные и межсловные интервалы */
+.letter-spacing-example, .word-spacing-example {
+  margin-bottom: 15px; /* Отступ снизу */
+  padding: 15px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+}
+.spacing-tight { 
+  letter-spacing: -1px; /* Уменьшение межбуквенного интервала */
+}
+.spacing-normal { 
+  letter-spacing: normal; /* Стандартный межбуквенный интервал */
+}
+.spacing-wide { 
+  letter-spacing: 5px; /* Увеличение межбуквенного интервала */
+}
+.word-tight { 
+  word-spacing: -2px; /* Уменьшение межсловного интервала */
+}
+.word-normal { 
+  word-spacing: normal; /* Стандартный межсловный интервал */
+}
+.word-wide { 
+  word-spacing: 10px; /* Увеличение межсловного интервала */
+}
+
+/* ===== 3. ТРАНСФОРМАЦИЯ И ОФОРМЛЕНИЕ ===== */
+
+/* text-transform - трансформация регистра */
+.text-transform-example {
+  padding: 15px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+}
+.lowercase { 
+  text-transform: lowercase; /* Все буквы строчные */
+}
+.uppercase { 
+  text-transform: uppercase; /* Все буквы прописные */
+}
+.capitalize { 
+  text-transform: capitalize; /* Каждое слово с заглавной буквы */
+}
+
+/* text-decoration - оформление текста */
+.text-decoration-example {
+  padding: 15px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+}
+.underline { 
+  text-decoration: underline; /* Подчеркивание */
+}
+.overline { 
+  text-decoration: overline; /* Надчеркивание */
+}
+.line-through { 
+  text-decoration: line-through; /* Перечеркивание */
+}
+.dotted-underline { 
+  text-decoration: underline dotted; /* Точечное подчеркивание */
+}
+
+/* text-indent - красная строка */
+.text-indent-example {
+  text-indent: 40px; /* Отступ первой строки */
+  padding: 15px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+.no-indent {
+  padding: 15px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+}
+
+/* ===== 4. ТЕНИ И ЭФФЕКТЫ ===== */
+
+/* text-shadow - тень текста */
+.text-shadow-container p {
+  margin-bottom: 20px; /* Отступ между элементами */
+  padding: 20px; /* Внутренние отступы */
+  text-align: center; /* Выравнивание по центру */
+  font-size: 1.5rem; /* Увеличенный размер шрифта */
+  font-weight: bold; /* Жирный шрифт */
+  border-radius: 8px; /* Скругление углов */
+}
+.shadow-simple {
+  text-shadow: 2px 2px #ff6b6b; /* Простая тень (смещение X, смещение Y, цвет) */
+  background: #2c3e50; /* Темный фон */
+  color: white; /* Белый текст */
+}
+.shadow-blur {
+  text-shadow: 2px 2px 8px #ff6b6b; /* Размытая тень (добавлен радиус размытия) */
+  background: #34495e; /* Темный фон */
+  color: white; /* Белый текст */
+}
+.shadow-multiple {
+  text-shadow: 1px 1px 0 #ff6b6b, 
+               2px 2px 0 #4ecdc4, 
+               3px 3px 0 #45b7d1; /* Множественные тени через запятую */
+  background: #2c3e50; /* Темный фон */
+  color: white; /* Белый текст */
+}
+.shadow-neon {
+  text-shadow: 0 0 5px #fff, 
+               0 0 10px #fff, 
+               0 0 15px #ff6b6b, 
+               0 0 20px #ff6b6b; /* Неоновый эффект с размытием */
+  background: #1a1a1a; /* Черный фон */
+  color: white; /* Белый текст */
+}
+.shadow-emboss {
+  text-shadow: 1px 1px 1px #ffffff, 
+               -1px -1px 1px #000000; /* Эффект тиснения */
+  background: #bdc3c7; /* Серый фон */
+  color: #7f8c8d; /* Серый текст */
+}
+
+/* color - цвет текста в разных форматах */
+.color-examples p {
+  margin-bottom: 10px; /* Отступ между элементами */
+  padding: 15px; /* Внутренние отступы */
+  border-radius: 5px; /* Скругление углов */
+  font-weight: bold; /* Жирный шрифт */
+}
+.color-hex { 
+  color: #e74c3c; /* HEX формат (#RRGGBB) */
+  background: #fadbd8; /* Светлый фон */
+}
+.color-rgb { 
+  color: rgb(52, 152, 219); /* RGB формат (red, green, blue) */
+  background: #d6eaf8; /* Светлый фон */
+}
+.color-rgba { 
+  color: rgba(46, 204, 113, 0.7); /* RGBA формат (с прозрачностью) */
+  background: #d5f4e6; /* Светлый фон */
+}
+.color-hsl { 
+  color: hsl(282, 100%, 41%); /* HSL формат (hue, saturation, lightness) */
+  background: #e8daef; /* Светлый фон */
+}
+
+/* ===== 5. ПРОЧИЕ СВОЙСТВА ===== */
+
+/* white-space - обработка пробелов и переносов */
+.white-space-examples p {
+  margin-bottom: 15px; /* Отступ между элементами */
+  padding: 15px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+  max-width: 400px; /* Ограничение ширины */
+}
+.normal-space { 
+  white-space: normal; /* Стандартная обработка пробелов */
+}
+.nowrap-space { 
+  white-space: nowrap; /* Запрет переноса строк */
+}
+.pre-space { 
+  white-space: pre; /* Сохранение пробелов и переносов как в исходном коде */
+}
+
+/* text-overflow - обрезка длинного текста */
+.text-overflow-container {
+  max-width: 300px; /* Ограничение ширины контейнера */
+}
+.text-overflow-container p {
+  margin-bottom: 15px; /* Отступ между элементами */
+  padding: 15px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+  overflow: hidden; /* Скрытие выходящего за границы контента */
+}
+.clip-overflow {
+  white-space: nowrap; /* Запрет переноса строк */
+  text-overflow: clip; /* Обрезка текста без многоточия */
+}
+.ellipsis-overflow {
+  white-space: nowrap; /* Запрет переноса строк */
+  text-overflow: ellipsis; /* Обрезка текста с многоточием */
+}
+
+/* direction & writing-mode - направление текста */
+.direction-examples p {
+  margin-bottom: 15px; /* Отступ между элементами */
+  padding: 15px; /* Внутренние отступы */
+  background: #e8f4f8; /* Светло-голубой фон */
+  border-radius: 5px; /* Скругление углов */
+}
+.ltr-direction { 
+  direction: ltr; /* Слева направо (стандартное) */
+}
+.rtl-direction { 
+  direction: rtl; /* Справа налево (для арабского, иврита) */
+  unicode-bidi: bidi-override; /* Принудительное изменение направления */
+}
+.vertical-text { 
+  writing-mode: vertical-rl; /* Вертикальное написание (справа налево) */
+  text-orientation: mixed; /* Ориентация символов */
+}
+
+/* ===== ПОДВАЛ САЙТА ===== */
+.footer {
+  text-align: center; /* Выравнивание по центру */
+  margin-top: 40px; /* Отступ сверху */
+  padding: 20px; /* Внутренние отступы */
+  background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+  border-radius: 10px; /* Скругление углов */
+  color: #7f8c8d; /* Цвет текста */
+}
+
+/* ===== АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ ===== */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px; /* Уменьшаем отступы на мобильных */
+  }
+  
+  .header h1 {
+      font-size: 2rem; /* Уменьшаем размер заголовка */
+  }
+  
+  .section {
+      padding: 20px; /* Уменьшаем отступы секций */
+  }
+  
+  .section h2 {
+      font-size: 1.5rem; /* Уменьшаем размер подзаголовков */
+  }
+  
+  .example {
+      padding: 15px; /* Уменьшаем отступы примеров */
+  }
+}
+
+/* ===== АНИМАЦИИ И ПЕРЕХОДЫ ===== */
+.example {
+  transition: all 0.3s ease; /* Плавные переходы при изменении стилей */
+}
+
+.example:hover {
+  transform: translateY(-2px); /* Легкий подъем при наведении */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Увеличение тени при наведении */
+}
+
+/* ===== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ УЛУЧШЕНИЯ ЧИТАЕМОСТИ ===== */
+p {
+  margin-bottom: 1rem; /* Стандартный отступ для абзацев */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem; /* Отступ для заголовков */
+  line-height: 1.2; /* Уменьшенный межстрочный интервал для заголовков */
+}
+
+/* Подсветка кода (если будет использоваться) */
+code {
+  background: #f4f4f4; /* Светло-серый фон */
+  padding: 2px 6px; /* Небольшие отступы */
+  border-radius: 3px; /* Скругление углов */
+  font-family: 'Courier New', monospace; /* Моноширинный шрифт */
+  font-size: 0.9em; /* Чуть меньший размер */
+}
